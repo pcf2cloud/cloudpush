@@ -8,9 +8,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/cloud")
 public class UserController {
-	
+
 	private UserService userservice;
-	
+
 	@Autowired
 	public UserController(UserService userservice) {
 		super();
@@ -21,7 +21,7 @@ public class UserController {
 	public @ResponseBody User getUser() {
 		User u =new  User("POI000987", "Manvendra Singh");
 		return userservice.getUser(u);
-		
+
 	}
-	
+
 }
