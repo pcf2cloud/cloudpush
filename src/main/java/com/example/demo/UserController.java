@@ -10,7 +10,7 @@ public class UserController {
 
 	@RequestMapping("/user")
 	public @ResponseBody User getUser() {
-		return new User("POI000987", "Manvendra Singh");
+		return new User("POI000987", "Manvendra Singh POI000987");
 	}
 	
 }
