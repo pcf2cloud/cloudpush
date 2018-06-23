@@ -23,5 +23,12 @@ public class UserController {
 		return userservice.getUser(u);
 
 	}
+	
+	@RequestMapping("/get")
+	public @ResponseBody User getUserNew() {
+		User u =new  User("POI0000555", "Manvendra Pratap Singh");
+		return userservice.getUser(u);
+
+	}
 
 }
