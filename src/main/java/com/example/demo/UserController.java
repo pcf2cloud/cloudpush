@@ -32,7 +32,7 @@ public class UserController {
 	}
 	
 	@RequestMapping("/user")
-	public @ResponseBody User getUserNew() {
+	public @ResponseBody User getUser() {
 		User u =new  User("POI000078363", "Wipro Digital");
 		return userservice.getUser(u);
 
