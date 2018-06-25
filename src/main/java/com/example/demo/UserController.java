@@ -24,18 +24,5 @@ public class UserController {
 
 	}
 	
-	@RequestMapping("/get")
-	public @ResponseBody User getUserNew() {
-		User u =new  User("POI0000555", "Manvendra Pratap Singh");
-		return userservice.getUser(u);
-
-	}
 	
-	@RequestMapping("/user")
-	public @ResponseBody User User() {
-		User u =new  User("POI000078363", "Wipro Digital");
-		return userservice.getUser(u);
-
-	}
-
 }
