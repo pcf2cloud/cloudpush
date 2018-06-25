@@ -16,14 +16,8 @@ import org.springframework.test.web.servlet.MockMvc;
 public class DemoCloudApplicationTests {
 
 	
-	@Mock
-    private UserService userService;
-	
-
 	@Test
-    public void testData() {
-        User U = new User("POI0098", "Manvendra Singh");
-        assertNotEquals(U, userService.getUser(new User("POI0098", "Manvendra Singh")));
-    }
+	public void contextLoads() {
+	}
 
 }
