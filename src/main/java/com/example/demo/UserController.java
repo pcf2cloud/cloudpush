@@ -16,7 +16,7 @@ public class UserController {
 		super();
 		this.userservice = userservice;
 	}
-
+//Test
 	@RequestMapping("/user")
 	public @ResponseBody User getUser() {
 		User u =new  User("POI000987", "Manvendra Singh");
